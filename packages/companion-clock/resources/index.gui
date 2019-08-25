@@ -1,3 +1,4 @@
 <svg>
-  <rect id="background" />
+  <rect id="background"/>
+  <text id="clock" class="clock-text">12:34</text>
 </svg>
