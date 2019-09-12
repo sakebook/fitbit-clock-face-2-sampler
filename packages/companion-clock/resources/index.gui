@@ -1,5 +1,5 @@
 <svg viewport-fill="white">
   <text id="clock">00:00</text>
-  <text id="label">東京の天気</text>
+  <text id="label">現在地の気温</text>
   <text id="temperature">--°</text>
 </svg>
