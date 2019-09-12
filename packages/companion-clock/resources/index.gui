@@ -1,4 +1,5 @@
-<svg>
-  <rect id="background"/>
-  <text id="clock" class="clock-text">12:34</text>
+<svg viewport-fill="white">
+  <text id="clock">00:00</text>
+  <text id="label">東京の天気</text>
+  <text id="temperature">--°</text>
 </svg>
