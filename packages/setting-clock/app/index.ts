@@ -1,5 +1,6 @@
 import document from "document";
 import clock, { TickEvent } from "clock";
+import * as messaging from "messaging";
 
 const clockText = document.getElementById("clock");
 
@@ -19,3 +20,9 @@ function onTick(evt: TickEvent): void {
 
 clock.granularity = "seconds";
 clock.ontick = (evt: TickEvent): void => onTick(evt);
+
+const background = document.getElementById("background") as RectElement;
+
+messaging.peerSocket.onmessage = (evt) => {
+    background.style.fill = evt.data.value;
+};
